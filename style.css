@@ -1,0 +1,367 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #433D8B;
+}
+
+
+.logo{
+    font-size: 23px;
+    color: white;
+    cursor: default;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #7d2ae8;
+}
+
+.navigation {
+    display: flex;
+    column-gap: 12px;
+    text-transform: uppercase;
+}
+
+.navigation a {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .4s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.navigation a:hover{
+    color: white;
+}
+
+.btn-talk{
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background-color: #7d2ae8;
+    border-radius: 18px;
+    border: 2px solid#7d2ae8;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btn-talk:hover {
+    color: #7d2ae8;
+    background: transparent;
+}
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    background: #181524;
+    padding-top: 100px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.homes{
+    width: 55%;
+    /* background: #937c7c; */
+    color: white;
+    position: relative;
+    z-index: 30;
+}
+
+.homes h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 70px;
+}
+
+.homes h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #ff7b00;
+}
+
+.homes P{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.home-img {
+    overflow: hidden;
+    padding-bottom: 6rem;
+    scale: 105%;
+}
+
+.transition-rel {
+    position: absolute;
+    bottom: 0;
+    width: 150%;
+    height: 100%;
+    z-index: 20;
+}
+
+.transition-abs {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(to bottom, transparent, #2c2c2c);
+}
+
+.button{
+    margin-top: 50px;
+    border-radius: 5px;
+    background: #38419D;
+    width: 150px;
+    height: 45px;
+    transition: .3s ease-in-out;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.button:hover{
+    box-shadow: 5px 5px 5px #c4c9ff;
+}
+
+.about{
+    width: 100vw;
+    height: 100%;
+    background: #2c2c2c;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.judul{
+    color: white;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.about p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: aliceblue;
+    width: 70%;
+}
+/* Styling for the container */
+.skill {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #191717;
+    color: #fff;
+    padding: 20px;
+    padding: 5rem;
+}
+
+.skill h1 {
+    font-size: 4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Styling for each skill section */
+.skills h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.bar {
+    width: 70%;
+    background-color: #555;
+    border-radius: 10px;
+    position: relative;
+    height: 10px;
+    margin-bottom: 20px;
+}
+
+.bar div {
+    height: 100%;
+    border-radius: 10px;
+    text-align: right;
+    position: relative;
+}
+
+/* Styling for the HTML skill bar */
+.html {
+    width: 23%;
+    background-color: red;
+    position: relative;
+}
+
+.html span {
+    position: absolute;
+    right: -35px;
+    top: -15px;
+    background-color: #444;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    display: none;
+}
+
+/* Styling for the CSS skill bar */
+.css {
+    width: 19%;
+    background-color: red;
+    position: relative;
+}
+
+.css span {
+    position: absolute;
+    right: -35px;
+    top: -15px;
+    background-color: #444;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    display: none;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(47, 45, 45);
+    padding: 5rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.wrapper .text {
+    color: aliceblue;
+    width: 45%;
+}
+
+.wrapper .text h1 {
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper .text p {
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 50%;
+    padding: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f5f9;
+    border-radius: 1.5rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-container h1 {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #292524;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+}
+
+.form-container form input,
+.form-container form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    color: #292524;
+    background-color: #f1f5f9;
+    border: 2px solid #737373;
+    border-radius: 0.75rem;
+    margin-top: 0.75rem;
+    outline: none;
+}
+
+.form-container form input {
+    height: 4rem;
+}
+
+.form-container form textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+.button-container button {
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #64748b;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #f8fafc;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #475569;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    background-color: #475569;
+}
+
+.footer .text {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
